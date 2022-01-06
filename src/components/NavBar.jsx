@@ -8,7 +8,7 @@ function NavBar() {
                     </div>
                 </div>
                 <div className="nav-btn">
-                    <label for="nav-check">
+                    <label>
                         <span></span>
                         <span></span>
                         <span></span>
