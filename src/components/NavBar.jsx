@@ -1,3 +1,5 @@
+import CartWidget from "./CartWidget";
+
 function NavBar() {
     return (
         <div className="nav">
@@ -20,6 +22,9 @@ function NavBar() {
                     <a href="http://stackoverflow.com/users/4084003/" target="_blank">2 - 4 años</a>
                     <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Accesorios</a>
                     <a href="https://codepen.io/jo_Geek/" target="_blank">Contacto</a>
+                    <div className="container-cart">
+                        <CartWidget />
+                    </div>
                 </div>
         </div>
     )

@@ -40,14 +40,35 @@ body {
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   color: #000000;
+  transition: ease .1s;
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  transform:scale(1.1);
 }
 
 .nav > #nav-check {
   display: none;
+}
+
+.container-cart{
+  display: inline;
+  margin: 50px;
+}
+
+.cartWidget{
+  width: 25px;
+}
+
+.btn-cart {
+  border: none;
+  padding: 1px;
+  background: #3492d900;
+  transition: ease .1s;
+}
+
+.btn-cart:hover {
+  transform:scale(1.1);
 }
 
 @media (max-width:600px) {

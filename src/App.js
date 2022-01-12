@@ -1,11 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar.jsx'
+import NavBar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
+
   return (
-    <NavBar/>
-  );
-}
+    <>
+      <NavBar/>
+      <ItemListContainer greeting={'Tienda Child'}/>
+    </>
+    );
+
+  }
 
 export default App;
