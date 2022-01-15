@@ -1,8 +1,14 @@
+import ItemCount from "./ItemCount";
+
 function ItemListContainer({greeting}){
+
+    function onAdd(count){ alert(count); }
+
     return (
-        <div>
+        <>
             <h1>{greeting}</h1>
-        </div>
+            <ItemCount stock={10} initial={1} onAdd={onAdd}/>
+        </>
     )
 }
 

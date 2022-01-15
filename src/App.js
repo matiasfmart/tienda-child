@@ -7,8 +7,12 @@ function App() {
 
   return (
     <>
-      <NavBar/>
-      <ItemListContainer greeting={'Tienda Child'}/>
+      <div className="nav">
+        <NavBar/>
+      </div>
+      <div>
+        <ItemListContainer greeting={'Tienda Child'}/>
+      </div>
     </>
     );
 
