@@ -4,12 +4,14 @@ function ItemList({products}){
     return (
         <div>
             {
-                products.map(
-                    <Item products={products} />
-                )
+                products.map((item) => (
+                    <div className="container-product">
+                        <Item products={item} />
+                    </div>
+                ))
             }
         </div>
     )
 }
 
-export default ItemList
+export default ItemList;
