@@ -10,21 +10,15 @@ function ItemCount({stock, initial, onAdd}) {
         count ? onAdd(count) : alert('No ingreso productos a su compra');
     }
 
-    return (
+    return ( 
         <div className="container-itemCount">
-            <img src=""/>
-            <div className="container-description">
-                <div className="container-title">
-                    <h2>Ejemplo</h2>
-                </div>
-                <div className="container-btnCart">
-                    <button onClick={()=> remove() } className="btn-remove">-</button>
-                    <h2 className="count">{count}</h2>
-                    <button onClick={()=> add() } className="btn-add">+</button>
-                </div>
-                <div className="container-btnAddToCart">
-                    <button onClick={()=> toOnAdd()} className="btn-addToCart">Agregar</button>
-                </div>
+            <div className="container-btnCart">
+                <button onClick={()=> remove() } className="btn-remove">-</button>
+                <h2 className="count">{count}</h2>
+                <button onClick={()=> add() } className="btn-add">+</button>
+            </div>
+            <div className="container-btnAddToCart">
+                <button onClick={()=> toOnAdd()} className="btn-addToCart">Agregar</button>
             </div>
         </div>
     )
