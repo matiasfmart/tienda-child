@@ -1,4 +1,3 @@
-import ItemCount from "./ItemCount";
 import ItemList from "./ItemList";
 import React, { useState, useEffect } from "react";
 
