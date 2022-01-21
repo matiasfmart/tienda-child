@@ -8,7 +8,7 @@ function Item({products}){
                 <h5>{products.id}</h5>
                 <h1>{products.title}</h1>
                 <p>{products.description}</p>
-                <h1>{products.price}</h1>
+                <h1>${products.price}</h1>
             </div>
             <ItemCount />
         </>

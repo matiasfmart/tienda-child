@@ -117,9 +117,9 @@ body {
   display: inline;
   border-radius: 100px;
   color: #337FED;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 1;
-  padding: 10px;
+  padding: 5px 13px;
   background-color: rgba(61, 148, 246, 0);
   border: solid #337FED 1px;
   text-align: center;
@@ -139,8 +139,8 @@ body {
 .btn-addToCart{
   width: 100%;
   display: inline;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
+  border-radius: 0px;
+  -webkit-border-radius: 10px;
   -moz-border-radius: 50px;
   color: #337FED;
   font-size: 18px;
