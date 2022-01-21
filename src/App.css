@@ -82,7 +82,7 @@ body {
   padding: 5%;
 }
 
-.container-itemCount{
+/* .container-itemCount{
   width: 25%;
   height: 50%;
   border-radius: 11px;
@@ -90,7 +90,19 @@ body {
   box-shadow: 0 0 10px 3px #0000001f;
   display: inline-block;
   text-align: center;
+} */
+
+.container-product{
+  width: 25%;
+  height: 50%;
+  border-radius: 11px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px 3px #0000001f;
+  display: inline-block;
+  text-align: center;
+  margin: 1%;
 }
+
 .container-btnCart{
   width: 100%; 
   display: flex;
@@ -127,7 +139,9 @@ body {
 .btn-addToCart{
   width: 100%;
   display: inline;
-  border-radius: 100px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
   color: #337FED;
   font-size: 18px;
   font-weight: 100;
@@ -142,9 +156,6 @@ body {
    color: white;
    background: #337FED;
    border: solid #337FED 1px;
-   -webkit-border-radius: 100px;
-   -moz-border-radius: 100px;
-   border-radius: 100px;
 }
 
 /* end styles card sale */

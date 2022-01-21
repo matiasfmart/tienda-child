@@ -10,6 +10,7 @@ function Item({products}){
                 <p>{products.description}</p>
                 <h1>{products.price}</h1>
             </div>
+            <ItemCount />
         </>
     )
 }
