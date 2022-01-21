@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react";
 
 function ItemListContainer({greeting}){
 
-    function onAdd(count){ alert(count); }
-
     const [arrayProducts, setArrayProducts] = useState([]);  
         
     const promiseProducts = new Promise((resolve, reject) => {

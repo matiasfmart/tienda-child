@@ -1,6 +1,9 @@
 import ItemCount from "./ItemCount";
 
 function Item({products}){
+    
+    function onAdd(count){ alert(count); }
+
     return(
         <>
             <img src={products.urlPicture} alt="" />
@@ -10,7 +13,7 @@ function Item({products}){
                 <p>{products.description}</p>
                 <p>${products.price}</p>
             </div>
-            <ItemCount />
+            <ItemCount stock={10} initial={1} onAdd={onAdd}/>
         </>
     )
 }

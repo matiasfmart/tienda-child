@@ -14,7 +14,7 @@ function ItemCount({stock, initial, onAdd}) {
         <>
             <div className="container-btnCart">
                 <button onClick={()=> remove() } className="btn-remove">-</button>
-                <h2 className="count">{count}</h2>
+                <h4 className="count">{count}</h4>
                 <button onClick={()=> add() } className="btn-add">+</button>
             </div>
             <div className="container-btnAddToCart">
