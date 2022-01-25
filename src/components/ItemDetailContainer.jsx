@@ -5,7 +5,7 @@ import ItemDetail from './ItemDetail';
 
 function ItemDetailContainer(){
 
-    const {item, setItem} = useState([]);
+    const [item, setItem] = useState([]);
     const {id} = useParams();
 
     useEffect(() => {
