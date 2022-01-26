@@ -147,8 +147,22 @@ body {
    background: #337FED;
    border: solid #337FED 1px;
 }
-
 /* end styles card sale */
+
+/* itemDetail styles start*/
+.container-itemDetail{
+  background-color: #fffdf9; 
+  width: 80%;
+  margin: auto; 
+}
+
+.container-itemDetail img{
+  display: inline-block;
+}
+
+.container-description__detail{
+  display: inline-block;
+}
 
 @media (max-width:600px) {
   .nav > .nav-btn {

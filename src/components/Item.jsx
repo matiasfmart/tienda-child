@@ -7,7 +7,7 @@ function Item({products}){
 
     return(
         <>
-            <img src={products.urlPicture} alt="" />
+            <img src='{products.urlPicture}' alt="" />
             <div className="container-product__description">
                 <p>{products.id}</p>
                 <p>{products.title}</p>
