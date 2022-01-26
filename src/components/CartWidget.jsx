@@ -1,10 +1,8 @@
-import CartImg from '../img/cartWidget.png';
-
 function CartWidget() {
 
     return(
         <>
-            <button className='btn-cart'><img src={CartImg} className="cartWidget"/></button>
+            <button className='btn-cart'><img src='./img/cartWidget.png' className="cartWidget"/></button>
         </>
     )
 }
