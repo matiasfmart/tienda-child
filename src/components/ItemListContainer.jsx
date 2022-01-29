@@ -1,40 +1,36 @@
 import ItemList from "./ItemList";
 import { promiseProducts } from "./Products";
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 function ItemListContainer({greeting}){
 
-    const [arrayProducts, setArrayProducts] = useState([]);  
-        
-    // const promiseProducts = new Promise((resolve, reject) => {
-    //     setTimeout(() => {
-    //         resolve([
-    //           {id: 1234, title: 'Remera', description:'Adidas' , price:1100 , urlPicture: "10"},
-    //           {id: 2345, title: 'Pantalon', description:'Narrow' , price:2200 , urlPicture: "2"},
-    //           {id: 3456, title: 'Pulsera', description:'Biju' , price:150 , urlPicture: "0"},
-    //         ]);
-    //     }, 2000);
-    // });
+    const [arrayProducts, setArrayProducts] = useState([]);
+    const {type} = useParams();
 
     useEffect(() => {
         promiseProducts.then(res =>{
-            setArrayProducts(res);
+            if (type) {
+                const typeOf = res.filter(x => x.type === type);
+                setArrayProducts(typeOf);
+            }else{
+                setArrayProducts(res);
+            }
         });
-    },[]);
+    },[type]);
 
     return (
         <>
             <h1>{greeting}</h1>
             {arrayProducts.length > 0 ? 
-                <>
+                <div className="container-productsItem">
                     <ItemList products={arrayProducts} />
-                </>
+                </div>
                 :
                 <>
                     loading...
                 </>
             }
-            {/* <ItemCount stock={10} initial={1} onAdd={onAdd}/> */}
         </>
     )
 }

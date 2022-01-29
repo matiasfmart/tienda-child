@@ -26,6 +26,7 @@ body {
   display: inline-block;
   font-size: 40px;
   color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 .nav > .nav-btn {
@@ -83,7 +84,7 @@ body {
 }
 
 .container-product{
-  width: 25%;
+  width: 20%;
   height: 50%;
   border-radius: 11px;
   background-color: #FFFFFF;
@@ -95,6 +96,11 @@ body {
 
 .container-product img{
   width: 100%;
+}
+
+.container-productsItem{
+  margin: auto;
+  width: 95%;
 }
 
 .container-btnCart{
@@ -173,6 +179,13 @@ body {
   display: inline-block;
   width: 50%;
   text-align: center;
+}
+
+.contactSection{
+  margin: 10% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width:600px) {
