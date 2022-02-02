@@ -35,7 +35,6 @@ body {
 
 .nav > .nav-links {
   display: inline-block;
-  float: right;
   font-size: 18px;
 }
 
@@ -100,7 +99,16 @@ body {
 
 .container-productsItem{
   margin: auto;
-  width: 95%;
+  width: 85%;
+}
+
+.container-product__title p{
+  display: inline-block;
+  margin: 10%;
+}
+
+.container-product{
+  margin: 2%;
 }
 
 .container-btnCart{
