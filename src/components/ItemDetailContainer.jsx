@@ -12,7 +12,8 @@ function ItemDetailContainer(){
       promiseProducts.then(res=> {
         if (id) {
             const idProduct = res.filter(e => e.id === id);
-            setItem(idProduct);
+            setItem(...idProduct);
+            console.log(...idProduct);
         }else{
             setItem(res);
         }

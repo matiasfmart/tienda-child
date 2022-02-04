@@ -6,21 +6,24 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
+import CartProvider from './context/CartProvider';
 
 function App() {
 
   return (
-    <BrowserRouter>
-      <NavBar/>
-      <Routes>
-        <Route path='/item/:id' element={<ItemDetailContainer/>}/>
-        <Route path='/' element={<ItemListContainer greeting={'Tienda'}/>}/>
-        <Route path='/category/:type' element={<ItemListContainer />}/>
-        <Route path='/contacto' element={<ContactSection />}/>
-        <Route path='/cart' element={<Cart />}/>
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <NavBar/>
+        <Routes>
+          <Route path='/item/:id' element={<ItemDetailContainer/>}/>
+          <Route path='/' element={<ItemListContainer greeting={'Tienda'}/>}/>
+          <Route path='/category/:type' element={<ItemListContainer />}/>
+          <Route path='/contacto' element={<ContactSection />}/>
+          <Route path='/cart' element={<Cart />}/>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </CartProvider>
     );
 }
 
