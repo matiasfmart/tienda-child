@@ -3,10 +3,10 @@ import { cartContext } from '../context/CartProvider';
 
 function Cart(){
 
-  const { cart } =  useContext(cartContext);
+  const { cart, deleteItem, clearCart} =  useContext(cartContext);
 
   return (
-    <>
+    <div className='container-cart'>
         {
           cart.map((e) => (
             <div className='container-itemCart'>
@@ -23,10 +23,13 @@ function Cart(){
               <div className='container-itemCart__price'>
                 <h1>${e.item.price}</h1>
               </div>
+              <button onClick={ ()=> deleteItem(e.item.id) }>Sacar del carrito</button>
             </div>
           ))
         }
-    </>
+
+        <button onClick={ ()=> clearCart() }>Vaciar Carrito</button>
+    </div>
   )
 };
 

@@ -224,6 +224,41 @@ body {
   display: inline-block;
 }
 
+/* cart styles start */
+
+.container-itemCart{
+  width: 80%;
+  height: 5%;
+  margin: 5% auto;
+  background: fffdf9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-itemCart__img{
+  display: inline-block;
+}
+
+.container-itemCart__img img{
+  width: 20%;
+}
+
+.container-itemCart__title{
+  display: inline-block;
+  text-align: center;
+}
+
+.container-itemCart__count{
+  display: inline-block;
+}
+
+.container-itemCart__price{
+  display: inline-block;
+}
+
+
+
 @media (max-width:600px) {
   .nav > .nav-btn {
     display: inline-block;
