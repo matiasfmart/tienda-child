@@ -27,8 +27,9 @@ function Cart(){
             </div>
           ))
         }
-
-        <button onClick={ ()=> clearCart() }>Vaciar Carrito</button>
+        {
+          cart.length ? <button onClick={ ()=> clearCart() }>Vaciar Carrito</button> : <h1>No hay productos en el carrito</h1>  
+        }
     </div>
   )
 };

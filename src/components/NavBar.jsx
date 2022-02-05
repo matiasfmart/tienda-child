@@ -23,7 +23,7 @@ function NavBar() {
                 <Link to={'/contacto'}>Contacto</Link>
             </div>
             <div className="container-cart">
-                <CartWidget />
+                <Link to={'/cart'}><CartWidget /></Link>
             </div>
         </div>
     )
