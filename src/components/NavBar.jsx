@@ -5,8 +5,6 @@ import React, { useContext } from 'react';
 
 function NavBar() {
 
-    const { cart } = useContext(cartContext);
-
     return (
         <div className="nav">
             <input type="checkbox" id="nav-check" />

@@ -33,8 +33,14 @@ function CartProvider({ children }) {
         setCart([])
     }
 
+    const totalItems = () => {
+        if (cart) {
+            return cart.reduce(((a, b) => a += b.count), 0);
+        }
+    }
+
     return( 
-        <cartContext.Provider value={{ cart, addToCart, clearCart, deleteItem }}>
+        <cartContext.Provider value={{ cart, addToCart, clearCart, deleteItem, totalItems }}>
             {children}
         </cartContext.Provider>
     )
