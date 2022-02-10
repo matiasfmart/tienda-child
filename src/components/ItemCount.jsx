@@ -12,13 +12,13 @@ function ItemCount({stock, initial, onAdd}) {
 
     return ( 
         <>
-            <div className="container-btnCart">
-                <button onClick={()=> remove() } className="btn-remove">-</button>
+            <div className="btn-group">
+                <button onClick={()=> remove() } className="btn btn-outline-primary">-</button>
                 <h4 className="count">{count}</h4>
-                <button onClick={()=> add() } className="btn-add">+</button>
+                <button onClick={()=> add() } className="btn btn-outline-primary">+</button>
             </div>
             <div className="container-btnAddToCart">
-                <button onClick={()=> toOnAdd()} className="btn-addToCart">Agregar</button>
+                <button onClick={()=> toOnAdd()} type='submit' className="btn btn-primary btn-lg">Agregar</button>
             </div>
         </>
     )

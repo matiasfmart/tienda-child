@@ -1,11 +1,11 @@
-import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
+import { Col, Card, Button } from 'react-bootstrap'
 
 function Item({products}){
 
     return(
-        <>
-            <img src={products.urlPicture} alt="" />
+        <Col>
+            {/* <img src={products.urlPicture} alt="" />
             <div className="container-product__description">
                 <div className="container-product__title">
                     <p>{products.title}</p>
@@ -13,9 +13,17 @@ function Item({products}){
                 </div>
                 <h1>${products.price}</h1>
             </div>
-            {/* <ItemCount stock={10} initial={1} onAdd={onAdd}/> */}
-            <Link to={`/Item/${products.id}`} >Detalle</Link>
-        </>
+            <Link to={`/Item/${products.id}`} >Detalle</Link> */}
+
+            <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src={products.urlPicture} />
+            <Card.Body>
+                <Card.Title>{products.title}</Card.Title>
+                <Card.Text>{products.description}</Card.Text>
+                <Link to={`/Item/${products.id}`} ><Button variant="primary">Detalle</Button></Link>
+            </Card.Body>
+            </Card>
+        </Col>
     )
 }
 

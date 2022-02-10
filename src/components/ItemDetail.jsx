@@ -6,7 +6,6 @@ import { cartContext } from '../context/CartProvider';
 
 function ItemDetail({item}){
 
-    const [quantity, setQuantity] = useState();
     const [btnViewCart, setBtnViewCart] = useState(false);
     const { addToCart } = useContext(cartContext);
 
@@ -17,32 +16,27 @@ function ItemDetail({item}){
 
     return(
         <>
-            {
-                btnViewCart ?
-                <div className='container-itemDetail'>
-                    <img src={item.urlPicture} alt="" />
-                    <div className="container-description__detail">
-                        <p>{item.id}</p>
-                        <h1>{item.title}</h1>
-                        <h4>{item.description}</h4>
-                        <h1>${item.price}</h1>
-                        <div className="container-btnAddToCart">
-                            <Link to={'/cart'}><button>Ver Productos</button></Link>
+            <div className='container'>
+                <div className="card mb-3">
+                    <div className='row g-0'>
+                        <div className='col-md-6'>
+                            <img className='img-fluid roundewd-start' src={item.urlPicture} alt="" />
+                        </div>
+                        <div className='col-md-6'>
+                            <div className='card-body'>
+                                <div className="container-description__detail">
+                                    <p className='card-text'><small className='text-muted'>{item.id}</small></p>
+                                    <h1 className='card-title'>{item.title}</h1>
+                                    <p className='card-text'>{item.description}</p>
+                                    <h2 className='card-title'>${item.price}</h2>
+                                        { btnViewCart ? <Link to={'/cart'}><button className='btn btn-primary btn-lg'>Ver Productos</button></Link>
+                                        : <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/> }
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                :
-                <div className='container-itemDetail'>
-                    <img src={item.urlPicture} />
-                    <div className="container-description__detail">
-                        <p>{item.id}</p>
-                        <h1>{item.title}</h1>
-                        <h4>{item.description}</h4>
-                        <h1>${item.price}</h1>
-                        <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>
-                    </div>
-                </div>
-            }
+            </div>
         </>
   )
 };

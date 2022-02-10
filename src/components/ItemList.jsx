@@ -1,16 +1,15 @@
 import Item from "./Item"
+import { Row } from 'react-bootstrap'
 
 function ItemList({products}){
     return (
-        <div>
+        <Row xs={1} md={3} className="g-4">
             {
                 products.map((item) => (
-                    <div className="container-product">
-                        <Item products={item} />
-                    </div>
+                    <Item products={item} />
                 ))
             }
-        </div>
+        </Row>
     )
 }
 

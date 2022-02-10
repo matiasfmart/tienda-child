@@ -78,7 +78,7 @@ body {
 
 /* start styles card sale */
 
-.container-description{
+/* .container-description{
   padding: 5%;
 }
 
@@ -168,7 +168,7 @@ body {
 /* end styles card sale */
 
 /* itemDetail styles start*/
-.container-itemDetail{
+/* .container-itemDetail{
   background-color: #fffdf9;
   width: 80%;
   margin: auto; 
@@ -226,7 +226,7 @@ body {
 
 /* cart styles start */
 
-.container-itemCart{
+/* .container-itemCart{
   width: 80%;
   height: 5%;
   margin: 5% auto;
@@ -303,4 +303,4 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
-}
+} */

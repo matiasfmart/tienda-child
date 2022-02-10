@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
+import { cartContext } from '../context/CartProvider';
+import React, { useContext } from 'react';
 
 function NavBar() {
+
+    const { cart } = useContext(cartContext);
+
     return (
         <div className="nav">
             <input type="checkbox" id="nav-check" />
