@@ -1,18 +1,5 @@
 function Footer() {
     return (
-        // <footer className="footer-container">
-        //     <div className="footer-links">
-        //         <div>
-        //             <a href='https://www.instagram.com/abii.37/' className="link" to={'/category/01'}>instagram</a>
-        //         </div>
-        //         <div>
-        //             <a href="https://www.facebook.com/ChildProveedor" className="link" to={'/category/24'}>facebook</a>
-        //         </div>
-        //         <div>
-        //             <a href="https://wa.me/+5491169792323" className="link" to={'/category/ac'}>whatsapp</a>
-        //         </div>
-        //     </div>
-        // </footer>
 
         <footer className="w-100 py-4 flex-shrink-0">
             <div className="container py-4">
