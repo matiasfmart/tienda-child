@@ -10,43 +10,6 @@ function ItemListContainer({greeting}){
     const [arrayProducts, setArrayProducts] = useState([]);
     const {type} = useParams();
 
-    // useEffect(() => {
-    //     if (type) {
-    //         const typeOf = arrayProducts.filter(x => x.type === type);
-    //         setArrayProducts(typeOf);
-    //     }else{
-    //         setArrayProducts(arrayProducts);
-    //     }
-    // },[type]);
-
-    // useEffect(() => {
-    //     //setLoading()
-    //     const db = getFireStore();
-    //     if (type) {            
-    //         db.collection('products').where('type', '==', type).get()
-    //             .then((querySnapShot) =>{
-    //                 if (querySnapShot.size === 0) {
-    //                     console.log('No Results!');
-    //                 }
-    //                 setArrayProducts(querySnapshot.docs.map((doc) => { 
-    //                     return { id: doc.id, ...doc.data() }
-    //                 }));
-    //             })
-    //     } else {
-    //         db.collection('products').get()
-    //         .then((querySnapShot) => {
-    //             if (querySnapShot.size ===0) {
-    //                 console.log('No Results!')
-    //             }
-
-    //             setArrayProducts(querySnapShot.docs.map((doc) => {
-    //                 return { id: doc.id, ...doc.data()}
-    //             }))
-    //         }
-    //     }
-
-    // }, [type]);
-
     useEffect(() => {
 
         const db = getFireStore()
