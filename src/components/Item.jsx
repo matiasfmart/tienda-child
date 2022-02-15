@@ -5,16 +5,6 @@ function Item({products}){
 
     return(
         <Col>
-            {/* <img src={products.urlPicture} alt="" />
-            <div className="container-product__description">
-                <div className="container-product__title">
-                    <p>{products.title}</p>
-                    <p>{products.id}</p>
-                </div>
-                <h1>${products.price}</h1>
-            </div>
-            <Link to={`/Item/${products.id}`} >Detalle</Link> */}
-
             <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={products.urlPicture} />
             <Card.Body>
