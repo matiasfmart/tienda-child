@@ -8,25 +8,10 @@ function ItemDetailContainer(){
     const [item, setItem] = useState([]);
     const {id} = useParams();
 
-    // useEffect(() => {
-    //   promiseProducts.then(res=> {
-    //     if (id) {
-    //         const idProduct = res.filter(e => e.id === id);
-    //         setItem(...idProduct);
-    //         console.log(...idProduct);
-    //     }else{
-    //         setItem(res);
-    //     }
-    //   })
-    
-    // }, [id]);
-
     useEffect(() => {
 
       const db = getFireStore();
-      const itemList = db.collection("products");
-
-      const product = itemList.doc(id);
+      const product = db.collection("products").doc(id);
 
       product.get()
           .then((doc) => {

@@ -16,6 +16,7 @@ body {
 }
 
 .nav{
+  background-color: rgb(255, 252, 242);
   position: fixed !important;
   z-index: 1;
   margin-top: -80px;
