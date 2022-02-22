@@ -15,7 +15,6 @@ function ItemDetailContainer(){
 
       product.get()
           .then((doc) => {
-              console.log(doc.data())
               if(!doc.exists) {
                   console.log("No exist the product!");
                   return
