@@ -1,53 +1,54 @@
 import { Link } from "react-router-dom";
 import React, { useRef, useContext } from "react";
 import { getFireStore } from "../db/firebase";
-import * as firebase from 'firebase/app';
-import 'firebase/firestore';
-import { cartContext } from '../context/CartProvider';
+import * as firebase from "firebase/app";
+import "firebase/firestore";
+import { cartContext } from "../context/CartProvider";
 import { useState } from "react/cjs/react.development";
 
 function Order() {
+  const { cart, deleteItem, clearCart, totalOrder } = useContext(cartContext);
+  const { orderID, setOrderID } = useState();
 
-    const { cart, deleteItem, clearCart, totalOrder} =  useContext(cartContext);
-    const { orderID, setOrderID } = useState();
+  const nameRef = useRef();
+  const lastNameRef = useRef();
+  const contactRef = useRef();
+  const adressRef = useRef();
+  const cityRef = useRef();
+  const provinceRef = useRef();
+  const mailRef = useRef();
+  const documentRef = useRef();
+  //const sendTypeRef = useRef();
 
-    const nameRef = useRef();
-    const lastNameRef = useRef();
-    const contactRef = useRef();
-    const adressRef = useRef();
-    const cityRef = useRef();
-    const provinceRef = useRef();
-    const mailRef = useRef();
-    const documentRef = useRef();
-    //const sendTypeRef = useRef();
+  function finishOrder() {
+    const db = getFireStore();
 
-
-    function finishOrder(){
-        const db = getFireStore();
-      
-        const orders = db.collection('orders');
-        const newOrder = {
-            buyer: {
-                name: nameRef.current.value,
-                lastName: lastNameRef.current.value,
-                contact: contactRef.current.value,
-                adress: adressRef.current.value,
-                city: cityRef.current.value,
-                province: provinceRef.current.value,
-                mail: mailRef.current.value,
-                dni: documentRef.current.value,
-                //sendType: sendTypeRef.current.value
-            },
-            items: cart,
-            //date: firebase.firestore.Timestamp.fromDate(new date()),
-            total: totalOrder()
-        }
-        orders.add(newOrder).then(({ id })=> {
-            setOrderID(id);
-        }).catch(err => {
-            alert('Ocurrio un error! ' + err);
-        })
-    }
+    const orders = db.collection("orders");
+    const newOrder = {
+      buyer: {
+        name: nameRef.current.value,
+        lastName: lastNameRef.current.value,
+        contact: contactRef.current.value,
+        adress: adressRef.current.value,
+        city: cityRef.current.value,
+        province: provinceRef.current.value,
+        mail: mailRef.current.value,
+        dni: documentRef.current.value,
+        //sendType: sendTypeRef.current.value
+      },
+      items: cart,
+      //date: firebase.firestore.Timestamp.fromDate(new date()),
+      total: totalOrder(),
+    };
+    orders
+      .add(newOrder)
+      .then(({ id }) => {
+        setOrderID(id);
+      })
+      .catch((err) => {
+        alert("Ocurrio un error! " + err);
+      });
+  }
 
   return (
     <div className="container">
@@ -67,7 +68,7 @@ function Order() {
             <div className="form-group col-md-4">
               <label className="form-label">Apellido</label>
               <input
-              ref={lastNameRef}
+                ref={lastNameRef}
                 type="name"
                 className="form-control"
                 id="inputEmail4"
@@ -77,7 +78,7 @@ function Order() {
             <div className="form-group col-md-4">
               <label className="form-label">Telefono de Contacto</label>
               <input
-              ref={contactRef}
+                ref={contactRef}
                 type="number"
                 className="form-control"
                 id="inputPassword4"
@@ -89,7 +90,7 @@ function Order() {
             <div className="form-group col-md-4">
               <label className="form-label">Direccion</label>
               <input
-              ref={adressRef}
+                ref={adressRef}
                 type="txt"
                 className="form-control"
                 placeholder="Direccion"
@@ -98,7 +99,7 @@ function Order() {
             <div className="form-group col-md-4">
               <label className="form-label">Localidad</label>
               <input
-              ref={cityRef}
+                ref={cityRef}
                 type="txt"
                 className="form-control"
                 placeholder="Localidad"
@@ -107,7 +108,7 @@ function Order() {
             <div className="form-group col-md-4">
               <label className="form-label">Provincia</label>
               <input
-              ref={provinceRef}
+                ref={provinceRef}
                 type="txt"
                 className="form-control"
                 placeholder="Provincia"
@@ -117,10 +118,17 @@ function Order() {
           <div className="row">
             <div className="form-group col-md-6">
               <label className="form-label">Mail</label>
-              <input ref={mailRef} type="txt" className="form-control" placeholder="Mail" />
+              <input
+                ref={mailRef}
+                type="txt"
+                className="form-control"
+                placeholder="Mail"
+              />
             </div>
             <div className="form-group col-md-4">
-              <label ref={documentRef} className="form-label">DNI</label>
+              <label ref={documentRef} className="form-label">
+                DNI
+              </label>
               <input type="number" className="form-control" placeholder="DNI" />
             </div>
             {/* <div class="col-md-2">
