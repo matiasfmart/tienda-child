@@ -2,6 +2,7 @@ import ItemList from "./ItemList";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import CarouselIndex from "./CarouselIndex";
+import Dispatch from "./Dispatch";
 import { getFireStore } from "../db/firebase";
 
 function ItemListContainer({greeting}){
@@ -54,7 +55,12 @@ function ItemListContainer({greeting}){
     return (
         <>
             {
-                type ? <div></div> : <CarouselIndex/>
+                type ? 
+                <div></div> : 
+                <>
+                    <CarouselIndex/>
+                    <Dispatch />
+                </>
             }
             <div className="container">
                 <div className="row greeting">

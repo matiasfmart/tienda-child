@@ -6,7 +6,7 @@ function Item({products}){
     return(
         <Col>
             <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={products.urlPicture} />
+            <Card.Img variant="top" className="" src={products.urlPicture} />
             <Card.Body>
                 <Card.Title>{products.title}</Card.Title>
                 <Card.Text>{products.description}</Card.Text>

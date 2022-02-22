@@ -8,7 +8,7 @@ function NavBar() {
 
     return (
         <Navbar collapseOnSelect expand="lg" id='nav' className="nav container-fluid">
-            <Container  className="">
+            <Container>
                 <Navbar.Brand><Link className='nav-title' to={'/'}>Child</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav" className="">

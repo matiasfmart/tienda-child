@@ -20,6 +20,10 @@ function CartProvider({ children }) {
         }
     }
 
+    const totalOrder = () => {
+        return cart.reduce((a, b) => a + (b.item.price * b.count), 0)
+    }
+
     const deleteItem = (id) => {
         const updatedCart = cart.filter(element => element.item.id !== id)
         setCart(updatedCart);
@@ -40,7 +44,7 @@ function CartProvider({ children }) {
     }
 
     return( 
-        <cartContext.Provider value={{ cart, addToCart, clearCart, deleteItem, totalItems }}>
+        <cartContext.Provider value={{ cart, addToCart, clearCart, deleteItem, totalItems, totalOrder }}>
             {children}
         </cartContext.Provider>
     )

@@ -8,32 +8,26 @@ function Cart(){
 
   return (
     <div className='container'>
+            <ol className="list-group list-group-numbered">
+              {
+                cart.map((e) => (
+                  <li className="list-group-item d-flex justify-content-between align-items-start">
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">{e.item.title}</div>
+                      ${e.item.price}
+                    </div>
+                    <span className="badge bg-primary rounded-pill">{e.count}</span>
+                  </li>
+                ))
+              }
+            </ol>
           {
-            cart.map((e) => (
-              <div className='row'>         
-                <div className='card mb-3'>
-                  <div className='row g-0'>
-                    <div className='col-md-2'>
-                      <img className='img-fluid rounded-start' src={e.item.urlPicture} alt="" />
-                    </div>
-                    <div className='col-md-6'>
-                      <h1 className='card-title'>{e.item.title}</h1>
-                      <h3 className='card-text'>{e.item.description}</h3>
-                    </div>
-                    <div className='col-md-2'>
-                        <h1 className='card-title'>${e.item.price}</h1>
-                        <h1 className='card-title'>{e.count}</h1>
-                    </div>
-                    <div className='col-md-2'>
-                      <button onClick={ ()=> deleteItem(e.item.id) } className='btn btn-primary'>Sacar del carrito</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))
-          }
-          {
-            cart.length ? <button className='btn btn-primary' onClick={ ()=> clearCart() }>Vaciar Carrito</button> 
+            cart.length ? 
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button className='btn btn-primary me-md-2' onClick={ ()=> clearCart() }>Vaciar Carrito</button> 
+              <Link to={'/order'}><button className='btn btn-primary'>Hacer Pedido</button></Link>
+            </div>
             : <div className='container'>
                 <div className='row'>
                   <h1>No hay productos en el carrito</h1>

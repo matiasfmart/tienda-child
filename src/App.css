@@ -16,7 +16,7 @@ body {
 }
 
 .nav{
-  background-color: rgb(255, 252, 242);
+  background-color: rgb(255, 253, 248);
   position: fixed !important;
   z-index: 1;
   margin-top: -80px;
@@ -69,6 +69,24 @@ a:hover, a:focus {
 
 .form-control:focus {
   background: #eeeeee;
+}
+
+.form-order{
+  padding: 50px;
+}
+
+.dispatch-container{
+  margin: 5% 0
+}
+
+.dispatchImg{
+  background-color: rgb(236, 249, 255);
+  border-radius: 100%;
+  margin: 0;
+}
+
+.dispatchImg img{
+  padding: 20%;
 }
 
 footer {

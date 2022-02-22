@@ -7,6 +7,7 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
 import CartProvider from './context/CartProvider';
+import Order from './components/Order';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/category/:type' element={<ItemListContainer greeting={'Vestirlos bien, es vestirlos Child'}/>}/>
           <Route path='/contacto' element={<ContactSection />}/>
           <Route path='/cart' element={<Cart />}/>
+          <Route path='/order' element={<Order />}/>
         </Routes>
         <Footer />
       </BrowserRouter>
