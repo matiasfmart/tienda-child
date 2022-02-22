@@ -141,7 +141,7 @@ function Order() {
           </div>
           <div>
             <Link to={"/order"}>
-              <button type="submit" className="btn btn-primary">
+              <button onClick={() => finishOrder()} type="submit" className="btn btn-primary">
                 Realizar Pedido
               </button>
             </Link>
