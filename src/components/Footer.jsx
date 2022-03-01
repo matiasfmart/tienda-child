@@ -12,7 +12,7 @@ function Footer() {
                         <p className="small text-muted mb-0">&copy; Todos los Copyrights reservados a la marca Child</p>
                     </div>
                     <div className="col-lg-2 col-md-6 col-6">
-                        <h5 className="text-grey mb-3">Quick links</h5>
+                        <h5 className="text-grey mb-3">Links</h5>
                         <ul className="list-unstyled text-muted">
                             <li><Link to={'/'} className="text-decoration-none text-secondary" >Home</Link></li>
                             <li><Link to={'/category/01'} className="text-decoration-none text-secondary" >0 - 1 años</Link></li>
