@@ -3,7 +3,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-body {
+body{
   margin-top: 80px !important;
 }
 
@@ -17,9 +17,6 @@ body {
 
 .nav{
   background-color: rgb(255, 253, 248);
-  position: fixed !important;
-  z-index: 1;
-  margin-top: -80px;
 }
 
 .greeting{
@@ -91,130 +88,6 @@ a:hover, a:focus {
 
 footer {
   background: #eeeeee;
-}
-
-
-/* start styles card sale */
-
-/* .container-description{
-  padding: 5%;
-}
-
-.container-product{
-  width: 20%;
-  height: 50%;
-  border-radius: 11px;
-  background-color: #FFFFFF;
-  box-shadow: 0 0 8px .5px #0000001f;
-  display: inline-block;
-  text-align: center;
-  margin: 1%;
-}
-
-.container-product img{
-  width: 100%;
-}
-
-.container-productsItem{
-  margin: auto;
-  width: 85%;
-}
-
-.container-product__title p{
-  display: inline-block;
-  margin: 10%;
-}
-
-.container-product{
-  margin: 2%;
-}
-
-.container-btnCart{
-  width: 100%; 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0%;
-}
-.count{
-  margin: 0;
-}
-.btn-remove, .btn-add{
-  display: inline;
-  border-radius: 100px;
-  color: #337FED;
-  font-size: 25px;
-  font-weight: 1;
-  padding: 5px 13px;
-  background-color: rgba(61, 148, 246, 0);
-  border: solid #337FED 1px;
-  text-align: center;
-  transition: .1s;
-}
-.count{
-  display: inline;
-}
-.btn-remove:hover, .btn-add:hover {
-   color: white;
-   background: #337FED;
-   border: solid #337FED 1px;
-   -webkit-border-radius: 100px;
-   -moz-border-radius: 100px;
-   border-radius: 100px;
-}
-.btn-addToCart{
-  width: 100%;
-  display: inline;
-  border-radius: 0px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 50px;
-  color: #337FED;
-  font-size: 18px;
-  font-weight: 100;
-  padding: 8px 15px;
-  margin: 5% 0%;
-  background-color: rgba(61, 148, 246, 0);
-  border: solid #337FED 1px;
-  text-align: center;
-  transition: .1s;
-}
-.btn-addToCart:hover {
-   color: white;
-   background: #337FED;
-   border: solid #337FED 1px;
-} */
-/* end styles card sale */
-
-/* itemDetail styles start*/
-/* .container-itemDetail{
-  background-color: #fffdf9;
-  width: 80%;
-  margin: auto; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.container-itemDetail img{
-  display: inline-block;
-  width: 50%;
-  padding: 5%;
-}
-
-.container-description__detail{
-  display: inline-block;
-  width: 50%;
-  text-align: center;
-}
-
-.contactSection{
-  margin: 10% auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-footer{
   margin-top: 40px;
 }
 
@@ -262,81 +135,30 @@ footer{
   filter: invert(.5);
 }
 
-/* .container-itemCart{
-  width: 80%;
-  height: 5%;
-  margin: 5% auto;
-  background: fffdf9;
+.container-icons{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content:center;
 }
 
-.container-itemCart__img{
-  display: inline-block;
+.contact-iconSocial img{
+  width: 40px;
+  height: auto;
+  margin: 0 50px;
+  filter: invert(.3);
 }
 
-.container-itemCart__img img{
-  width: 20%;
+.contact-text{
+  margin: 50px 0;
 }
 
-.container-itemCart__title{
-  display: inline-block;
-  text-align: center;
+.container-contact{
+  margin-top: 150px;
 }
 
-.container-itemCart__count{
-  display: inline-block;
+.itemDetail-container{
+  margin-top: 120px;
 }
 
-.container-itemCart__price{
-  display: inline-block;
+.container-cart{
+  margin-top: 130px;
 }
-
-
-
-@media (max-width:600px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
-}*/

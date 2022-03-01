@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
     return (
 
@@ -6,27 +8,19 @@ function Footer() {
                 <div className="row gy-4 gx-5">
                     <div className="col-lg-4 col-md-6">
                         <img src="/img/logo1.png" width='150' className="footer-img"/>
-                        <p className="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                        <p className="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a className="text-primary" href="#">Bootstrapious.com</a></p>
+                        <p className="small text-muted">Vestirlos bien, es vestirlos Child.</p>
+                        <p className="small text-muted mb-0">&copy; Todos los Copyrights reservados a la marca Child</p>
                     </div>
                     <div className="col-lg-2 col-md-6 col-6">
                         <h5 className="text-grey mb-3">Quick links</h5>
                         <ul className="list-unstyled text-muted">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Get started</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <li><Link to={'/'} className="text-decoration-none text-secondary" >Home</Link></li>
+                            <li><Link to={'/category/01'} className="text-decoration-none text-secondary" >0 - 1 años</Link></li>
+                            <li><Link to={'/category/24'} className="text-decoration-none text-secondary" >2 - 4 años</Link></li>
+                            <li><Link to={'/category/ac'} className="text-decoration-none text-secondary" >Accesorios</Link></li>
+                            <li><Link to={'/contacto'} className="text-decoration-none text-secondary" >Contacto</Link></li>
                         </ul>
                     </div>
-                    {/* <div className="col-lg-2 col-md-6 col-6">
-                        <h5 className="text-grey mb-3">Quick links</h5>
-                        <ul className="list-unstyled text-muted">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Get started</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </div> */}
                     <div className="col-lg-4 col-md-6 col-6">
                         <h5 className="text-grey mb-3">Seguinos</h5>
                         <p className="small text-muted">Seguinos en nuestras redes para ser el primero en ver los nuevos modelos y descuentos!</p>

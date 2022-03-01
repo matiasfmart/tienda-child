@@ -7,7 +7,7 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 function NavBar() {
 
     return (
-        <Navbar collapseOnSelect expand="lg" id='nav' className="nav container-fluid">
+        <Navbar fixed="top" collapseOnSelect expand="lg" id='nav' className="nav container-fluid">
             <Container>
                 <Navbar.Brand><Link className='nav-title' to={'/'}>Child</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>

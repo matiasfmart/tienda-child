@@ -16,11 +16,11 @@ function ItemDetail({item}){
 
     return(
         <>
-            <div className='container'>
+            <div className='container itemDetail-container'>
                 <div className="card mb-3">
                     <div className='row g-0'>
                         <div className='col-md-6'>
-                            <img className='img-fluid roundewd-start' src={item.urlPicture} alt="" />
+                            <img className='img-fluid roundewd-start' src={item.urlPicture} alt="Responsive image" />
                         </div>
                         <div className='col-md-6'>
                             <div className='card-body'>
