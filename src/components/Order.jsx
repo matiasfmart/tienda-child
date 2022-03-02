@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState, useRef, useContext } from "react";
 import { getFireStore } from "../db/firebase";
-import * as firebase from "firebase/app";
 import "firebase/firestore";
 import { cartContext } from "../context/CartProvider";
 import Swal from 'sweetalert2/dist/sweetalert2.js'
