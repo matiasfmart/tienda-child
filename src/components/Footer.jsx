@@ -14,11 +14,11 @@ function Footer() {
                     <div className="col-lg-2 col-md-6 col-6">
                         <h5 className="text-grey mb-3">Links</h5>
                         <ul className="list-unstyled text-muted">
-                            <li><Link to={'/'} className="text-decoration-none text-secondary" >Home</Link></li>
-                            <li><Link to={'/category/01'} className="text-decoration-none text-secondary" >0 - 1 años</Link></li>
-                            <li><Link to={'/category/24'} className="text-decoration-none text-secondary" >2 - 4 años</Link></li>
-                            <li><Link to={'/category/ac'} className="text-decoration-none text-secondary" >Accesorios</Link></li>
-                            <li><Link to={'/contacto'} className="text-decoration-none text-secondary" >Contacto</Link></li>
+                            <li><Link to={'/'} className="text-decoration-none text-secondary footerLink" >Home</Link></li>
+                            <li><Link to={'/category/01'} className="text-decoration-none text-secondary footerLink" >0 - 1 años</Link></li>
+                            <li><Link to={'/category/24'} className="text-decoration-none text-secondary footerLink" >2 - 4 años</Link></li>
+                            <li><Link to={'/category/ac'} className="text-decoration-none text-secondary footerLink" >Accesorios</Link></li>
+                            <li><Link to={'/contacto'} className="text-decoration-none text-secondary footerLink" >Contacto</Link></li>
                         </ul>
                     </div>
                     <div className="col-lg-4 col-md-6 col-6">

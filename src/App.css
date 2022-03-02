@@ -19,6 +19,15 @@ body{
   background-color: rgb(255, 253, 248);
 }
 
+.navLink{
+  padding: 10px 15px;
+  transition: .5s;
+}
+
+.navLink:hover{
+  background-color: rgb(241, 238, 228);
+}
+
 .greeting{
   padding: 50px;
 }
@@ -115,6 +124,14 @@ footer {
   text-decoration: none;
 }
 
+.footerLink{
+
+}
+
+.footerLink:hover{
+  padding-left: 10px;
+}
+
 .footer-links div{
   display: inline-block;
 }
@@ -154,11 +171,6 @@ footer {
 .container-contact{
   margin-top: 150px;
 }
-
-.itemDetail-container{
-  /* margin-top: 120px; */
-}
-
 .cart-container{
   margin-top: 130px;
 }

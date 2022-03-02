@@ -13,10 +13,10 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav" className="">
                     <Nav>
-                        <Nav.Link><Link to={'/category/01'} className="text-decoration-none text-secondary" >0 - 1 años</Link></Nav.Link>
-                        <Nav.Link><Link to={'/category/24'} className="text-decoration-none text-secondary" >2 - 4 años</Link></Nav.Link>
-                        <Nav.Link><Link to={'/category/ac'} className="text-decoration-none text-secondary" >Accesorios</Link></Nav.Link>
-                        <Nav.Link><Link to={'/contacto'} className="text-decoration-none text-secondary" >Contacto</Link></Nav.Link>
+                        <Nav.Link><Link to={'/category/01'} className="text-decoration-none text-secondary navLink">0 - 1 años</Link></Nav.Link>
+                        <Nav.Link><Link to={'/category/24'} className="text-decoration-none text-secondary navLink" >2 - 4 años</Link></Nav.Link>
+                        <Nav.Link><Link to={'/category/ac'} className="text-decoration-none text-secondary navLink" >Accesorios</Link></Nav.Link>
+                        <Nav.Link><Link to={'/contacto'} className="text-decoration-none text-secondary navLink" >Contacto</Link></Nav.Link>
                     </Nav>
                     <Link to={'/cart'} className="text-decoration-none text-secondary" ><CartWidget /></Link>
                 </Navbar.Collapse>
