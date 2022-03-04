@@ -10,7 +10,10 @@ Child, es una marca registrada, emprendimiento familiar que comenzo hace años, 
 ## Construido con 🛠️
 
 * [HTML - CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+* [Bootstrap](https://getbootstrap.com/)
 * [React Js](https://es.reactjs.org/)
+* [SeetAlert](https://sweetalert.js.org/)
+* [Firebase](https://firebase.google.com/)
 
 ## Autor ✒️
 
@@ -24,6 +27,6 @@ Child, es una marca registrada, emprendimiento familiar que comenzo hace años, 
 
 Este proyecto está bajo la Licencia (MIT License) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
-## Demo de navegacion
+## Link del Sitio
 
-* [Click aqui para ver demo](https://drive.google.com/drive/folders/1PPjIkyoOnh9YPcqql-3Uf6SZAYUUNrpJ?usp=sharing)
+* [Click aqui](https://condescending-lalande-daa474.netlify.app/)
