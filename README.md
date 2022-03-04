@@ -12,7 +12,7 @@ Child, es una marca registrada, emprendimiento familiar que comenzo hace años, 
 * [HTML - CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 * [Bootstrap](https://getbootstrap.com/)
 * [React Js](https://es.reactjs.org/)
-* [SeetAlert](https://sweetalert.js.org/)
+* [SweetAlert](https://sweetalert.js.org/)
 * [Firebase](https://firebase.google.com/)
 
 ## Autor ✒️
